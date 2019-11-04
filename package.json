@@ -1,0 +1,10 @@
+{
+    "name": "hh-school-html",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Leonid Feskov",
+    "license": "MIT",
+    "devDependencies": {
+        "less": "^3.10.3"
+    }
+}
