@@ -1,9 +1,22 @@
+@columns-count-s: 2;
+@columns-count-m: 6;
+@columns-count-l: 12;
+
 .columns-wrapper {
     box-sizing: border-box;
     min-width: 320px;
     max-width: 620px;
     margin: 0 auto;
     padding: 0 15px;
+
+    @media @screen-gt-s {
+        max-width: none;
+        width: @column-width-m * @columns-count-m;
+    }
+
+    @media @screen-gt-m {
+        width: @column-width-l * @columns-count-l;
+    }
 }
 
 .columns-row {
