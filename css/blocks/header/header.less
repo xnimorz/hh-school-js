@@ -16,6 +16,12 @@
     &__button {
         margin-left: 20px;
     }
+
+    &__button_menu {
+        @media @screen-gt-s {
+            display: none;
+        }
+    }
 }
 
 .header-button-icon {
@@ -32,6 +38,10 @@
 
     &_login {
         background-image: url('login-icon.svg');
+
+        @media @screen-gt-s {
+            display: none;
+        }
     }
 
     &_menu {
