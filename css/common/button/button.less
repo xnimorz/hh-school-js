@@ -1,4 +1,4 @@
-.button {
+.default-button() {
     box-sizing: border-box;
     height: @control-height;
     display: inline-block;
@@ -15,6 +15,10 @@
     transition-timing-function: ease;
     transition-property: background-color, border-color, color;
     -webkit-appearance: none;
+}
+
+.button {
+    .default-button();
 
     &:hover,
     &:focus,
