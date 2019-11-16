@@ -4,3 +4,20 @@
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.columns-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -@column-padding-s;
+}
+
+.column {
+    box-sizing: border-box;
+    width: @column-width-s;
+    padding: 0 @column-padding-s;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.column_s-1 {width: @column-width-s;}
+.column_s-2 {width: @column-width-s * 2;}
