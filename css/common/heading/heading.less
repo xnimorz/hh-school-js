@@ -1,15 +1,35 @@
 .heading {
     font: normal 26px/36px @font-family-heading;
-    margin: 0 0 20px;
+    margin: 0 0 10px;
 
     @media @screen-gt-s {
         font-size: 36px;
         line-height: 44px;
     }
 
+    &_level-1 {
+        font-size: 26px;
+        line-height: 32px;
+    
+        @media @screen-gt-s {
+            font-size: 36px;
+            line-height: 44px;
+        }
+    }
+
     &_level-2 {
         font-size: 20px;
         line-height: 24px;
+
+        @media @screen-gt-s {
+            font-size: 30px;
+            line-height: 37px;
+        }
+    }
+
+    &_level-3 {
+        font-size: 18px;
+        line-height: 22px;
 
         @media @screen-gt-s {
             font-size: 30px;
