@@ -69,14 +69,19 @@
     }
     margin: 15px auto;
     display: flex; 
-    justify-content: space-between;
-    height: 8px;
-    width: 44px;
 
     &__dot-container {
         border-radius: 50%;
         background-color: #DFDEDD;
         width: 8px;
+        height: 8px;
+        margin-right: 4px;
+        padding: 0;
+        border: 1px solid transparent;
+
+        &:last-child {
+            margin-right: 0;
+        }
 
         &_choosen {
             background-color: @color-dark;

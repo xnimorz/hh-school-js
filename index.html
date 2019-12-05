@@ -64,18 +64,18 @@
                         srcset="images/img-01.png 1x, images/img-01@2x.png 2x, images/img-01@3x.png 3x">
                 </div>
                 <div class="slider-content-block-dots">
-                    <div class="slider-content-block-dots__dot-container slider-content-block-dots__dot-container_choosen">
-                    </div>
-                    <div class="slider-content-block-dots__dot-container">
-                    </div>
-                    <div class="slider-content-block-dots__dot-container">
-                    </div>
-                    <div class="slider-content-block-dots__dot-container">
-                    </div>
+                    <button class="slider-content-block-dots__dot-container slider-content-block-dots__dot-container_choosen">
+                    </button>
+                    <button class="slider-content-block-dots__dot-container">
+                    </button>
+                    <button class="slider-content-block-dots__dot-container">
+                    </button>
+                    <button class="slider-content-block-dots__dot-container">
+                    </button>
                 </div>
                 <div class="slider-content-text-button">
                     <div class="slider-content__text-container column column_s-2 column_m-3 column_l-6">
-                        <h1 class="heading heading_level-1">Мужская и женская одежда с&nbsp;символикой HeadHunter</h1>
+                        <h1 class="heading">Мужская и женская одежда с&nbsp;символикой HeadHunter</h1>
                     </div>
                     <div class="slider-content__button-container column column_s-2 column_m-3 column_l-6">
                         <button class="button">Перейти в каталог</button>
@@ -211,7 +211,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-content__line footer-content__line_image"></div>
+            <div class="footer-content__line"></div>
             <div class="footer-content__copyright">
                     © 2019 Группа компаний HeadHunter</br>
                     Сегодня на сайте 684&nbsp;978&nbsp;вакансий, 
@@ -222,71 +222,71 @@
     </div>
 </footer>
 
-<!-- popup_order-->
 <section class="popup-section">
     <div class="columns-wrapper">
         <div class="popup-header">
-            <h2 class="heading heading_level-1">Оформление заказа</h2>
+            <h1 class="heading">Оформление заказа</h1>
             <div class="nav_close"></div>
         </div>
         <div class="columns-row">
             <div class="column column_s-2 column_m-3 column_l-6">
                 <form class="popup-content-form-order">
-                    <div class="form-order-contact-info">
+                    <div class="form-order-group">
                         <label class="form-order__label">Контактное лицо</label>
                         <input class="input" type="text" placeholder="ФИО">
                         <input class="input" type="text" placeholder="Электронная почта">
-                        <div class="form-order-contact-info__number">
-                            <input class="input form-order-contact-info__number_number-7" type="text" value="+7" readonly>
-                            <input class="input form-order-contact-info__number_number-code" type="text" placeholder="Код">
-                            <input class="input form-order-contact-info__number_number-number" type="text" placeholder="Номер">
+                        <div class="form-order-contact-info-number">
+                            <input class="input form-order-contact-info-number_number-7" type="text" value="+7" readonly>
+                            <input class="input form-order-contact-info-number_number-code" type="text" placeholder="Код">
+                            <input class="input form-order-contact-info-number_number-number" type="text" placeholder="Номер">
                         </div>
                     </div>
-                    <div class="form-order-delivery">
+                    <div class="form-order-group">
                         <label class="form-order__label">Способ получения заказа</label>
-                        <div class="form-order-delivery__buttons">
-                            <div class="form-order-delivery__button">Самовывоз</div>
-                            <div class="form-order-delivery__button form-order-delivery__button_choosen">Доставка</div>
+                        <div class="group-buttons">
+                            <input type="radio" id="self-delivery"><div class="radio-button-text radio-button-text_delivery"><label for="self-delivery">Самовывоз</label></div>
+                            <input type="radio" id="delivery" checked><div class="radio-button-text radio-button-text_delivery"><label for="delivery">Доставка</label></div>
                         </div>
                     </div>
-                    <div class="form-order-address">
+                    <div class="form-order-group">
                         <label class="form-order__label">Адрес</label>
-                        <div class="form-order-address__list">
+                        <div class="form-order-address-list">
                             <div class="select-wrapper">
                                 <select class="select">
                                     <option class="option">Город</option>
                                     <option class="option">Город</option>
                                 </select>
                             </div>
-                        <div class="form-order-address__text">
+                        </div>
+                        <div class="form-order-address-text">
                             <textarea class="textarea" placeholder="Адрес"></textarea>
                         </div>
                     </div>
-                    <div class="form-order-payment">
+                    <div class="form-order-group">
                         <label class="form-order__label">Оплата</label>
                         <div class="form-order-radio-group">
                             <div class="form-order-radio-group__element">
-                                <input type="radio" checked>
-                                <label class="form-order__text">Online-оплата</label>
+                                <input type="radio" checked id="online">
+                                <label class="form-order__text" for="online">Online-оплата</label>
                             </div>
                             <div class="form-order-radio-group__element">
-                                <input type="radio">
-                                <label class="form-order__text">Наличными</label>
+                                <input type="radio" id="cash">
+                                <label class="form-order__text" for="cash">Наличными</label>
                             </div>
                             <div class="form-order-radio-group__element">
-                                <input type="radio">
-                                <label class="form-order__text">Картой при получении</label>
+                                <input type="radio" id="card">
+                                <label class="form-order__text" for="card">Картой при получении</label>
                             </div>
                         </div>
                     </div>
-                    <div class="form-order-notice">
+                    <div class="form-order-group">
                         <label class="form-order__label">Уведомления</label>
-                        <div class="form-order-notice__checkbox-sms">
-                            <input type="checkbox" checked>
-                            <label class="form-order__text">Хочу получать SMS уведомления</label>
+                        <div class="form-order-notice-checkbox-sms">
+                            <input type="checkbox" checked id="sms">
+                            <label class="form-order__text" for="sms">Хочу получать SMS уведомления</label>
                         </div>
                     </div>
-                    <div class="form-order-confirm-button">
+                    <div class="form-order-group">
                         <button class="button form-order-confirm-button_button">Оформить заказ</button>
                     </div>
                 </form>
@@ -306,13 +306,13 @@
                         <div class="product-card__description">Красная хлопоковая футболка</br>
                                 с&nbsp;коротким рукавом
                         </div>
-                        <div class="product-card__size">
-                            <div class="product-card__size-block">XS</div>
-                            <div class="product-card__size-block">S</div>
-                            <div class="product-card__size-block product-card__size-block_choosen">M</div>
-                            <div class="product-card__size-block">L</div>
-                            <div class="product-card__size-block">XL</div>
-                            <div class="product-card__size-block">XXL</div>
+                        <div class="group-buttons">
+                            <input type="radio" id="XS"><div class="radio-button-text radio-button-text_size"><label for="XS">XS</label></div>
+                            <input type="radio" id="S"><div class="radio-button-text radio-button-text_size"><label for="S">S</label></div>
+                            <input type="radio" id="M" checked><div class="radio-button-text radio-button-text_size"><label for="M">M</label></div>
+                            <input type="radio" id="L"><div class="radio-button-text radio-button-text_size"><label for="L">L</label></div>
+                            <input type="radio" id="XL"><div class="radio-button-text radio-button-text_size"><label for="XL">XL</label></div>
+                            <input type="radio" id="XXL"><div class="radio-button-text radio-button-text_size"><label for="XXL">XXL</label></div>                            
                         </div>
                     </div>
                 </div>

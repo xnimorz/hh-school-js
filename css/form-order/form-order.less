@@ -1,0 +1,120 @@
+.form-order{
+
+    &__label {
+        color: #333333;
+        font: bold 18px/22px @font-family-heading;
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        font: normal 14px/143% Arial;
+        height: 16px;
+        display: inline-block;
+    }
+}
+
+.form-order-group {
+
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-order-contact-info-number {
+
+    font: normal 14px/143% Arial;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+
+    &_number-7 {
+        width: 38px;
+        flex-grow: 0;
+    }
+
+    &_number-code {
+        width: 63px;
+        flex-grow: 0;
+        margin-left: -1px;
+    }
+
+    &_number-number {
+        flex-grow: 1;
+        margin-left: -1px;
+    }
+}
+
+.group-buttons {
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.radio-button-text {
+    position: relative;
+    padding: 9px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_delivery {
+
+        width: 50%;
+        @media @screen-gt-s {
+            width: 123px;
+        }
+        &:last-child {
+            margin-left: -1px;
+        }
+    }
+
+    &_size {
+        width: 49px;
+        margin-left: -1px;
+        margin-top: 10px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+
+
+.form-order-address-text {
+    margin-top: 10px;
+}
+
+
+.form-order-radio-group {
+
+    &__element {
+        margin-top: 10px;
+        height: 20px;
+
+        &:first-child {
+            margin-top: 5px;
+        }
+    }
+}
+
+.form-order-notice-checkbox-sms {
+
+    margin: 10px 0 5px;
+    display: flex;
+}
+
+
+.form-order-confirm-button {
+
+    &_button {
+        width: 100%;
+
+        @media @screen-gt-s {
+            width: 140px;
+        }
+    }
+}
+
+
+
