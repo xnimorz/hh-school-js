@@ -17,6 +17,11 @@
     &__name {
         font: bold 16px/1.2 @font-family-heading;
         margin-bottom: 10px;
+
+        &_order {
+            font: bold 18px/1.2 @font-family-heading;
+            margin-bottom: 5px;
+        }
     }
 
     &__old-price {
@@ -36,5 +41,49 @@
         position: absolute;
         top: 10px;
         left: 10px;
+
+        &_order {
+            width: 40px;
+            height: 40px;
+            font: 14px/40px @font-family-heading;
+        }
+    }
+
+    &__description {
+        text-align: center;
+        font: 14/1.43 Arial;
+        margin-top: 10px;
+        color: #666;
+    }
+
+    &__size {
+        display: flex;
+        margin-top: 15px;
+    }
+
+    &__size-block {
+
+        width: 49px;
+        height: 38px;
+        text-align: center;
+        font: 14/1.43 Arial;
+        color: #666;
+        background: #FFFFFF;
+        border: 1px solid #DFDEDD;
+        box-sizing: border-box;
+        border-radius: 1px;
+        border-collapse: collapse;
+        padding: 9px;
+
+        margin-left: -1px;
+
+        @media @screen-gt-m {
+            margin-left: -2px;
+        }
+
+
+        &_choosen {
+            background: #EEE;
+        }
     }
 }

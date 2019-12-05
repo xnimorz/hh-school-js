@@ -1,0 +1,61 @@
+.select-wrapper {
+
+    position: relative;
+    &::after {
+        content:'';
+        display: inline-block;
+        background-color: #F9F9F9;
+        background-image: url(/css/common/select/arrow.svg);
+        background-position: center;
+        width: 28px;
+        height: 36px;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0;
+        border: 1px solid #C5C9CA;
+        box-sizing: border-box;
+        border-radius: 0px 2px 2px 0px;
+        pointer-events: none;
+        margin-top: 5px;
+    }
+
+    &.active::after { //применять, когда будет открыт список
+        background-color: #EEE;
+        transform: rotate(180deg);
+        border-radius: 2px 0px 0px 2px;
+    }
+}
+
+.select {
+    background: #F9F9F9;
+    border: 1px solid #C5C9CA;
+    box-sizing: border-box;
+    border-radius: 2px;
+    height: 100%;
+    padding: 9px 10px;
+    width: 100%;
+    outline: none;
+    margin-top: 5px;
+    font: normal 14px/20px Arial;
+
+    &:active, &:focus{
+        background: #EEE;
+    }
+}
+
+.option {
+    outline: none;
+    background: #FFF;
+    padding: 11px 12px;
+    height: 38px;
+    box-sizing: border-box;
+    width: 100%;
+    font: normal 14px/16px Arial;
+    color: #333;
+
+    &:active, &:focus{
+        background: #0F8FEE;
+        color: #FFF;
+    }
+
+}

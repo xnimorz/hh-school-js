@@ -1,0 +1,27 @@
+input[type=radio] {
+    visibility: hidden;
+    position: absolute;
+    margin: 0 0 0 0;
+}
+
+input[type=radio] + label::before {
+
+    display:inline-block;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    background: #FFFFFF;
+    border: 1px solid #C5C9CA;
+    border-radius: 50%;
+    content: '';
+    margin-right: 8px;
+    vertical-align: top;
+}
+
+input[type=radio]:checked + label::before {
+
+    border: 5px solid #0088F2;
+    box-sizing: border-box;
+    border-radius: 12px;
+    content: '';
+}

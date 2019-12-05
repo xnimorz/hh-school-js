@@ -1,0 +1,25 @@
+.input {
+        
+    background: #FFFFFF;
+    border: 1px solid #DFDEDD;
+    box-sizing: border-box;
+    padding: 9px 10px;
+    margin: 5px 0;
+
+    &:focus, &:active{
+        border-color: #0F8FEE;
+        outline: none;
+        position: relative; 
+        z-index: 1
+    }
+
+    &:invalid {
+        box-shadow: none;
+        border-color: #C52929;
+    }
+
+    &::placeholder {
+        color: #AEB5B9;
+        font: normal 14px/143% Arial;
+    }
+}

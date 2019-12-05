@@ -222,6 +222,104 @@
     </div>
 </footer>
 
+<!-- popup_order-->
+<section class="popup-section">
+    <div class="columns-wrapper">
+        <div class="popup-header">
+            <h2 class="heading heading_level-1">Оформление заказа</h2>
+            <div class="nav_close"></div>
+        </div>
+        <div class="columns-row">
+            <div class="column column_s-2 column_m-3 column_l-6">
+                <form class="popup-content-form-order">
+                    <div class="form-order-contact-info">
+                        <label class="form-order__label">Контактное лицо</label>
+                        <input class="input" type="text" placeholder="ФИО">
+                        <input class="input" type="text" placeholder="Электронная почта">
+                        <div class="form-order-contact-info__number">
+                            <input class="input form-order-contact-info__number_number-7" type="text" value="+7" readonly>
+                            <input class="input form-order-contact-info__number_number-code" type="text" placeholder="Код">
+                            <input class="input form-order-contact-info__number_number-number" type="text" placeholder="Номер">
+                        </div>
+                    </div>
+                    <div class="form-order-delivery">
+                        <label class="form-order__label">Способ получения заказа</label>
+                        <div class="form-order-delivery__buttons">
+                            <div class="form-order-delivery__button">Самовывоз</div>
+                            <div class="form-order-delivery__button form-order-delivery__button_choosen">Доставка</div>
+                        </div>
+                    </div>
+                    <div class="form-order-address">
+                        <label class="form-order__label">Адрес</label>
+                        <div class="form-order-address__list">
+                            <div class="select-wrapper">
+                                <select class="select">
+                                    <option class="option">Город</option>
+                                    <option class="option">Город</option>
+                                </select>
+                            </div>
+                        <div class="form-order-address__text">
+                            <textarea class="textarea" placeholder="Адрес"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-order-payment">
+                        <label class="form-order__label">Оплата</label>
+                        <div class="form-order-radio-group">
+                            <div class="form-order-radio-group__element">
+                                <input type="radio" checked>
+                                <label class="form-order__text">Online-оплата</label>
+                            </div>
+                            <div class="form-order-radio-group__element">
+                                <input type="radio">
+                                <label class="form-order__text">Наличными</label>
+                            </div>
+                            <div class="form-order-radio-group__element">
+                                <input type="radio">
+                                <label class="form-order__text">Картой при получении</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-order-notice">
+                        <label class="form-order__label">Уведомления</label>
+                        <div class="form-order-notice__checkbox-sms">
+                            <input type="checkbox" checked>
+                            <label class="form-order__text">Хочу получать SMS уведомления</label>
+                        </div>
+                    </div>
+                    <div class="form-order-confirm-button">
+                        <button class="button form-order-confirm-button_button">Оформить заказ</button>
+                    </div>
+                </form>
+            </div>
+            <div class="column column_s-2 column_m-3 column_l-6">
+                <div class="popup-content-order-product">
+                    <div class="product-card">
+                        <div class="product-card__image-container">
+                            <img class="product-card__image" src="images/product-4.jpg" alt="Футболка"/>
+                            <div class="product-card__sale product-card__sale_order">sale</div>
+                        </div>
+                        <div class="product-card__name product-card__name_order">Футболка</div>
+                        <div class="product-card__price">
+                            <span class="product-card__old-price">690</span>
+                            390 ₽
+                        </div>
+                        <div class="product-card__description">Красная хлопоковая футболка</br>
+                                с&nbsp;коротким рукавом
+                        </div>
+                        <div class="product-card__size">
+                            <div class="product-card__size-block">XS</div>
+                            <div class="product-card__size-block">S</div>
+                            <div class="product-card__size-block product-card__size-block_choosen">M</div>
+                            <div class="product-card__size-block">L</div>
+                            <div class="product-card__size-block">XL</div>
+                            <div class="product-card__size-block">XXL</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <script src="js/index.js"></script>
 </body>
 </html>
