@@ -13,6 +13,7 @@
     "devDependencies": {
         "cssnano": "^4.1.10",
         "gh-pages": "^2.1.1",
-        "less": "^3.10.3"
+        "less": "^3.10.3",
+        "parcel": "^1.12.4"
     }
 }
