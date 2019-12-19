@@ -1,2 +1,3 @@
-import './grid';
-import './slider';
+import "./grid";
+import "./slider";
+import "./form";
