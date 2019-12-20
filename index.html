@@ -57,32 +57,47 @@
 <section class="slider-section">
     <div class="columns-wrapper">
         <div class="columns-row">
-            <div class="slider-content">
-                <div class="slider-content__image-container column column_s-2 column_m-3 column_l-6">
-                    <img class="slider-content__image" 
-                        src="images/img-01.png" 
-                        srcset="images/img-01.png 1x, images/img-01@2x.png 2x, images/img-01@3x.png 3x">
-                </div>
-                <div class="slider-content-block-dots">
-                    <button class="slider-content-block-dots__dot-container slider-content-block-dots__dot-container_choosen">
-                    </button>
-                    <button class="slider-content-block-dots__dot-container">
-                    </button>
-                    <button class="slider-content-block-dots__dot-container">
-                    </button>
-                    <button class="slider-content-block-dots__dot-container">
-                    </button>
-                </div>
-                <div class="slider-content-text-button">
-                    <div class="slider-content__text-container column column_s-2 column_m-3 column_l-6">
-                        <h1 class="heading">Мужская и женская одежда с&nbsp;символикой HeadHunter</h1>
-                    </div>
-                    <div class="slider-content__button-container column column_s-2 column_m-3 column_l-6">
-                        <button class="button">Перейти в каталог</button>
+            <div class="slider-wrapper">
+                <div class="slider-content slider-content_active js-slide" data-slide-id="1">
+                    <div class="slider-content__image-container column column_s-2 column_m-3 column_l-6">
+                        <img class="slider-content__image" 
+                            src="images/img-01.png" 
+                            srcset="images/img-01.png 1x, images/img-01@2x.png 2x, images/img-01@3x.png 3x">
+                    </div>                
+                    <div class="slider-content-text-button">
+                        <div class="slider-content__text-container column column_s-2 column_m-3 column_l-6">
+                            <h1 class="heading">Мужская и женская одежда с&nbsp;символикой HeadHunter</h1>
+                        </div>
+                        <div class="slider-content__button-container column column_s-2 column_m-3 column_l-6">
+                            <button class="button">Перейти в каталог</button>
+                        </div>
                     </div>
                 </div>
+                <div class="slider-content js-slide" data-slide-id="2">
+                    <div class="slider-content__image-container column column_s-2 column_m-3 column_l-6">
+                        <img class="slider-content__image" 
+                            src="images/img-02.png" 
+                            srcset="images/img-02.png 1x, images/img-02@2x.png 2x, images/img-02@3x.png 3x">
+                    </div>                
+                    <div class="slider-content-text-button">
+                        <div class="slider-content__text-container column column_s-2 column_m-3 column_l-6">
+                            <h1 class="heading">Офисные принадлежности с&nbsp;символикой HeadHunter</h1>
+                        </div>
+                        <div class="slider-content__button-container column column_s-2 column_m-3 column_l-6">
+                            <button class="button">Перейти в каталог</button>
+                        </div>
+                    </div>
+                </div>                
             </div>
         </div>
+        <div class="columns-row">
+            <div class="slider-content-block-dots js-slide-buttons">
+                <button data-slide-id="1" class="js-slide-button slider-content-block-dots__dot-container slider-content-block-dots__dot-container_choosen">
+                </button>
+                <button data-slide-id="2" class="js-slide-button slider-content-block-dots__dot-container">
+                </button>                    
+            </div>
+        </div>        
     </div>
 </section>
 
@@ -222,7 +237,7 @@
     </div>
 </footer>
 
-<section class="popup-section">
+<section class="popup-section js-form">
     <div class="columns-wrapper">
         <div class="popup-header">
             <h1 class="heading">Оформление заказа</h1>
@@ -236,9 +251,9 @@
                         <input class="input" type="text" placeholder="ФИО">
                         <input class="input" type="text" placeholder="Электронная почта">
                         <div class="form-order-contact-info-number">
-                            <input class="input form-order-contact-info-number_number-7" type="text" value="+7" readonly>
-                            <input class="input form-order-contact-info-number_number-code" type="text" placeholder="Код">
-                            <input class="input form-order-contact-info-number_number-number" type="text" placeholder="Номер">
+                            <input class="js-phone-country input form-order-contact-info-number_number-7" type="text" value="+7" readonly>
+                            <input class="js-phone-code input form-order-contact-info-number_number-code" type="text" placeholder="Код">
+                            <input class="js-phone-number input form-order-contact-info-number_number-number" type="text" placeholder="Номер">
                         </div>
                     </div>
                     <div class="form-order-group">
@@ -287,7 +302,7 @@
                         </div>
                     </div>
                     <div class="form-order-group">
-                        <button class="button form-order-confirm-button_button">Оформить заказ</button>
+                        <button class="js-submit button form-order-confirm-button_button">Оформить заказ</button>
                     </div>
                 </form>
             </div>
