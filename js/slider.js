@@ -23,7 +23,7 @@ const showSlide = slideId => {
     )
     .classList.remove("slider-content-block-dots__dot-container_choosen");
 
-  active.addEventListener(
+  active.addEventListener(      
     "animationend",
     () => {
       active.classList.add("slider-content_active");
@@ -42,17 +42,3 @@ document.querySelector(".js-slide-buttons").addEventListener("click", e => {
   }
   showSlide(data.slideId);
 });
-
-function nextSlide() {
-  setTimeout(() => {
-    const id = active.dataset.slideId;
-    let next = parseInt(id, 10) + 1;
-    if (next > 2) {
-      next = 1;
-    }
-    showSlide(next);
-    nextSlide();
-  }, 5000);
-}
-
-nextSlide();

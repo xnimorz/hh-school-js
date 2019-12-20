@@ -1,18 +1,25 @@
+// Здесь специфическая логиика, которую мы не можем вынести в field
+
+// => orderForm 
 const selectors = {
   number: ".js-phone-number",
   code: ".js-phone-code",
   country: ".js-phone-country"
 };
 
+// 
 export default function field(form, conditions) {
   const number = form.querySelector(selectors.number);
   const code = form.querySelector(selectors.code);
   const country = form.querySelector(selectors.country);
 
+  // общие в field.js и специфические правила можно прокидывать в field
   function validate(field) {
+    // required
     if (!field.value.trim()) {
       return "empty";
     }
+    // => описывается специфическим правилом
     const match = field.value.match(/[0-9\s]+/);
     if (!match) {
       return "incorrect character";
@@ -23,6 +30,7 @@ export default function field(form, conditions) {
     return "incorrect character";
   }
 
+  // => field.js
   let numberError = validate(number);
   let codeError = validate(code);
   let error = numberError || codeError;
@@ -32,6 +40,7 @@ export default function field(form, conditions) {
     code: code.value
   };
 
+  // простейший PubSub паттерн, можно унести в field.js
   let subscribers = [];
   function subscribe(callback) {
     subscribers.push(callback);
@@ -39,7 +48,6 @@ export default function field(form, conditions) {
       subscribers = subscribers.filter(item => item !== callback);
     };
   }
-
   function notify() {
     subscribers.forEach(callback => {
       callback({
@@ -51,6 +59,7 @@ export default function field(form, conditions) {
     });
   }
 
+  // сохраняем изменения пользователя
   number.addEventListener("keyup", () => {
     touched = true;
     numberError = validate(number);
@@ -58,7 +67,6 @@ export default function field(form, conditions) {
     value.number = number.value;
     notify();
   });
-
   code.addEventListener("keyup", () => {
     touched = true;
     codeError = validate(code);

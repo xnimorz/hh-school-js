@@ -1,5 +1,8 @@
 import makePhone from "./phone";
 
+// Компонент самой формы. 
+// Общая логика валидации всей формы
+
 const form = document.querySelector(".js-form");
 const submit = form.querySelector(".js-submit");
 const phone = makePhone(form);
